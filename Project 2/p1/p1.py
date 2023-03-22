@@ -15,7 +15,7 @@ def create_dataframe(filepath, format, spark):
     """
 
     #add your code here
-    spark_df = None #temporary placeholder
+    spark_df = spark.read.format(format).load(filepath) 
 
     return spark_df
 
@@ -29,7 +29,8 @@ def transform_nhis_data(nhis_df):
     """
 
     #add your code here
-    transformed_df = None #temporary placeholder
+    cols = 
+    transformed_df =  #temporary placeholder
     
     return transformed_df
 
